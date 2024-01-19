@@ -976,6 +976,8 @@ def main_backup(args):
                 encryption_passphrase, args = args[0], args[1:]
         elif arg == "--encrypt-print-passphrase":
             print_passphrase = True
+        elif arg == "--no-encrypt-print-passphrase":
+            print_passphrase = False
         elif arg == "--erasure-coding":
             use_erasure_coding = True
         elif arg == "--error-correction":
